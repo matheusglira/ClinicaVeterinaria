@@ -1,0 +1,20 @@
+<section class="form-section">
+    <div class="about">
+        <h3>
+            Fique por dentro das nossas novidades
+        </h3>
+        <p>Texto exemplo Texto exemplo Texto exemplo Texto exemplo , Texto exemplo Texto exemplo </p>
+    </div>
+    <form [formGroup]="form">
+        <label>Nome</label>
+        <input id="nome" for="nome" formControlName="nome"/>
+        <label>Email</label>
+        <input id="email" for="email" formControlName="email"/>
+        <app-btn-primary 
+            btnTextInput="Se inscreva" 
+            variant="secondary"
+            (submit)="submit()"
+            [disabled]="!form.valid">
+        </app-btn-primary>
+    </form>
+</section>

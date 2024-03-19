@@ -1,0 +1,14 @@
+@import "../../../color-variables.scss";
+
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        // line-height: 0.88rem;
+        background: -webkit-linear-gradient(180deg, $secondary-color, $light-primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+}
